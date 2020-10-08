@@ -1,6 +1,6 @@
 <template>
   <article class="post">
-    <h4 style="title">{{ activity.title }}</h4>
+    <h4 style="title">{{ activity.title  }}</h4>
     <p style="category">{{ capitalize(categories[activity.category].text) }}</p>
     <p style="notes">{{ activity.notes }}</p>
     <div class="media">
@@ -13,7 +13,7 @@
         <div class="content">
           <p>
             <a href="#">Filip Jerga</a>
-            updated {{ activity.updatedAt }} minutes ago &nbsp;
+            updated {{ activity.updatedAt | formatTime }} &nbsp;
           </p>
         </div>
       </div>
